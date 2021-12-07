@@ -1,1 +1,95 @@
-.
+# 1 .
+list_a = ['a','b','c','d','r','f']
+list_b = [1,2,3,4,5,6]
+list_c = [99,98,97,96,95,94]
+print(zip(list_a,list_b,list_c))
+# answer :
+# <zip object at 0x0000019F13697A40>
+
+# 2 .
+list_a = ['a','b','c','d','r','f']
+list_b = [1,2,3,4,5,6]
+list_c = [99,98,97,96,95,94]
+zipped_list = list(zip(list_a,list_b,list_c))
+print(zipped_list)
+# answer :
+# [('a', 1, 99), ('b', 2, 98), ('c', 3, 97), ('d', 4, 96), ('r', 5, 95), ('f', 6, 94)]
+
+# 3 .
+list_a = ['a','b','c','d','r','f']
+list_b = [1,2,3,4,5,6]
+list_c = [99,98,97,96,95,94]
+zipped_list = list(zip(list_a,list_b,list_c))
+for a,b,c in zipped_list:
+    print(a)
+    print(b)
+    print(c)
+# answer :
+# a
+# 1
+# 99
+# b
+# 2
+# 98
+# c
+# 3
+# 97
+# d
+# 4
+# 96
+# r
+# 5
+# 95
+# f
+# 6
+# 94
+
+# 4 .
+list_a = ['a','b','c','d','r','f']
+print('z' in list_a)
+# answer : False
+
+# 5 .
+list_a = ['a','b','c','d','r','f']
+print('a' in list_a)
+# answer : True
+
+# 6 .
+print('john' in {'john': 140})
+# answer : True
+
+# 7 .
+print(140 in {'john': 140})
+# answer : False
+
+# 8 .
+print(140 in {'john': 140}.values())
+# answer : True
+
+# 9 .
+list_b = [1,2,3,4,5]
+answer = max(list_b)
+print(answer)
+# answer : 5
+
+# 10 .
+list_b = [1,2,3,4,5]
+answer = min(list_b)
+print(answer)
+# answer : 1
+
+# 11 .
+list_a = ['a','b','c','d','r','f']
+answer = max(list_a)
+print(answer)
+# answer : a
+
+# 12 .
+list_a = ['a','b','c','d','r','f']
+answer = min(list_a)
+print(answer)
+# answer : f
+
+
+
+

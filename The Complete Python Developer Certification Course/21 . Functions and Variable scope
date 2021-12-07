@@ -1,0 +1,83 @@
+# help(print)
+#1.
+def greet_person():
+    print("Hello there, this is a greeting...")
+greet_person()
+# answer : Hello there, this is a greeting...
+
+#2.
+def greet_person(jibberish):
+    print("Hello there, this is a greeting...")
+greet_person("Taz")
+# answer : Hello there, this is a greeting...
+
+#3.
+def greet_person(jibberish):
+    print("Hello there," + jibberish + " !")
+greet_person("Imtiaz")
+# answer : Hello there,Imtiaz !
+
+#4.
+def greet_person(jibberish = "your name"):
+    print("Hello there," + jibberish + " !")
+greet_person()
+# answer : Hello there,your name !
+
+#5.
+def greet_person(jibberish = "buddy"):
+    print("Hello there," + jibberish + " !")
+greet_person("nurlan")
+# answer : Hello there,nurlan !
+
+#6.
+def greet_person(jibberish = 4):
+    print("Hello there," + str(jibberish) + " !")
+greet_person()
+# answer : Hello there,4 !
+
+#7.
+def greet_person(jibberish = "jackson"):
+    print("Hello there," + str(jibberish) + " !")
+greet_person(100)
+# answer : Hello there,100 !
+
+#8.
+def greet_person(jibberish = "mike"):
+    print("this is all the body of the function")
+    print("here there")
+    print("Hello there," + str(jibberish) + " !")
+greet_person(200)
+# answer :
+# this is all the body of the function
+# here there
+# Hello there,200 !
+
+#9.
+def greet_person(jibberish = "buddy"):
+    '''
+    DOCSTRING: this returns a greeting
+    INPUT: jibberish
+    OUTPUT:hello ... name
+    '''
+    return "Hello there, " + str(jibberish) + "!"
+greeting = greet_person(300)
+print(greeting)
+# answer :
+# Hello there, 300!
+
+#10.
+def greet_person(jibberish = "buddy"):
+    '''
+    DOCSTRING: this returns a greeting
+    INPUT: jibberish
+    OUTPUT:hello ... name
+    '''
+    return "Hello there, " + str(jibberish) + "!"
+def remainder(num1, num2):
+    """"
+    INPUT: num1,num2 - these are the numbers to divide to get a remainder with %
+    """
+    return num1 % num2
+remainder_value = remainder(10,3)
+print(remainder_value)
+# answer : 1

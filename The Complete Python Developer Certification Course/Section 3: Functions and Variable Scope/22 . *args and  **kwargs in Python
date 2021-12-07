@@ -1,0 +1,41 @@
+#1.
+result = sum((1,2,3,4,5))
+print(result)
+# answer : 15
+
+#2.
+def mysum(*args):
+    return sum(args)
+result = mysum(10,20,30,1,1,1,1,10,5,6)
+print(result)
+# answer : 85
+
+#3.
+def key_value_func(**kwargs):
+    print(kwargs)
+key_value_func(name="mike",weight=200,age=27)
+# answer : {'name': 'mike', 'weight': 200, 'age': 27}
+
+#4.
+def key_value_func(**kwargs):
+    print(kwargs.keys())
+key_value_func(name="mike",weight=200,age=27)
+# answer : dict_keys(['name', 'weight', 'age'])
+
+#5.
+def key_value_func(**kwargs):
+    print(kwargs.values())
+key_value_func(name="mike",weight=200,age=27)
+# answer : dict_values(['mike', 200, 27])
+
+#6.
+def key_value_func(**kwargs):
+    print(kwargs.get("weight"))
+key_value_func(name="mike",weight=200,age=27)
+# answer : 200
+
+#7.
+def key_value_func(**john):
+    print(john.get("address"))
+key_value_func(name="mike",weight=200,age=27,address="Tunguch 1")
+# answer : Tunguch 1

@@ -1,0 +1,116 @@
+# 1 .
+employees = {'mike': 27000, 'john': 65000, 'rebeca': 60000, 'tom': 100000}
+for person in employees:
+    print(person)
+# answer :
+# mike
+# john
+# rebeca
+# tom
+
+# 2 .
+employees = {'mike': 27000, 'john': 65000, 'rebeca': 60000, 'tom': 100000}
+for entry in employees.items():
+    print(entry)
+# answer :
+# ('mike', 27000)
+# ('john', 65000)
+# ('rebeca', 60000)
+# ('tom', 100000)
+
+# 3 .
+employees = {'mike': 27000, 'john': 65000, 'rebeca': 60000, 'tom': 100000}
+for entry in employees.items():
+    print(type(entry))
+# answer :
+# <class 'tuple'>
+# <class 'tuple'>
+# <class 'tuple'>
+# <class 'tuple'>
+
+# 4 .
+employees = {'mike': 27000, 'john': 65000, 'rebeca': 60000, 'tom': 100000}
+for salary in employees.values():
+    print(salary)
+# answer :
+# 27000
+# 65000
+# 60000
+# 100000
+
+# 5 .
+employees = {'mike': 27000, 'john': 65000, 'rebeca': 60000, 'tom': 100000}
+for keys in employees.keys():
+    print(keys)
+# answer :
+# mike
+# john
+# rebeca
+# tom
+
+# 6 .
+employees = {'mike': 27000, 'john': 65000, 'rebeca': 60000, 'tom': 100000}
+for keys,value in employees.items():
+    print(keys)
+    print(value)
+# answer :
+# mike
+# 27000
+# john
+# 65000
+# rebeca
+# 60000
+# tom
+# 100000
+
+# 7 .
+employees = [('mike', 27000), ('john', 65000), ('rebeca', 60000), ('tom', 100000)]
+for k,v in employees:
+    print(v)
+# answer :
+# 100000
+# 27000
+# 65000
+# 60000
+# 100000
+
+# 8 .
+employees = [('mike', 27000), ('john', 65000), ('rebeca', 60000), ('tom', 100000)]
+for (name,salary) in employees:
+    print(name)
+    print(salary)
+    print()
+# answer :
+# mike
+# 27000
+# john
+# 65000
+# rebeca
+# 60000
+# tom
+# 100000
+
+# 9 .
+employees = [('mike', 27000, 29), ('john', 65000, 47), ('rebeca', 60000, 62), ('tom', 100000, 29)]
+for (name,salary, age) in employees:
+    print(name)
+    print(salary)
+    print(age)
+    print()
+# answer :
+# mike
+# 27000
+# 29
+#
+# john
+# 65000
+# 47
+#
+# rebeca
+# 60000
+# 62
+#
+# tom
+# 100000
+# 29
+

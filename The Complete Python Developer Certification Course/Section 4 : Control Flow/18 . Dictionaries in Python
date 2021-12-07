@@ -1,0 +1,128 @@
+# 1.
+dict = {'k1':'some data', '7':'other data'}
+dict['7'] = "NEW VALUE"
+print(dict)
+# ans :
+# {'k1': 'some data', '7': 'NEW VALUE'}
+
+# 2.
+dict = {'k1':'some data', '7':'other data'}
+dict['k1'] = "NEW VALUE"
+print(dict)
+# ans :
+# {'k1': 'NEW VALUE', '7': 'other data'}
+
+# 3.
+people_weight_dict = {'john':134, 'mike':170, 'robert':165}
+print(people_weight_dict)
+# ans :
+# {'john': 134, 'mike': 170, 'robert': 165}
+
+# 4.
+people_weight_dict = {'john':134, 'mike':170, 'robert':165}
+# How do we change john's weight ? For example  as
+# {'john': 190, 'mike': 170, 'robert': 165}
+
+# ans :
+people_weight_dict['john'] = 190
+print(people_weight_dict)
+# {'john': 190, 'mike': 170, 'robert': 165}
+
+# 5.
+people_weight_dict = {'john':134, 'mike':170, 'robert':165}
+# How do we  get 'mike':170 ?
+
+# ans :
+people_weight_dict.pop('mike')
+print(people_weight_dict)
+# {'john': 134, 'robert': 165}
+
+# 6.
+people_weight_dict = {'john':134, 'mike':170, 'robert':165}
+# How do we  get  mike's  weight as  170 ?
+
+# ans :
+weight_of_mike = people_weight_dict.pop('mike')
+print(weight_of_mike)
+# 170
+
+# 7.
+people_weight_dict = {'john':134, 'mike':170, 'robert':165}
+# How do we clear the entire dictionary ?
+
+# ans :
+people_weight_dict.clear()
+print(people_weight_dict)
+# {}
+
+# 8.
+people_weight_dict = {'john':134, 'mike':170, 'robert':165}
+# How do we add a new key and value for the  dictionary  ?
+# For exampe :
+# {'john': 134, 'mike': 170, 'robert': 165, '99': 'some data'}
+
+# ans :
+people_weight_dict['99'] = "some data"
+print(people_weight_dict)
+# {'john': 134, 'mike': 170, 'robert': 165, '99': 'some data'}
+
+# 9.
+people_weight_dict = {'john':134, 'mike':170, 'robert':165, 'items':['orange','banana']}
+# How do we get this  ? For example  :  ['orange', 'banana']
+
+# ans :
+print(people_weight_dict['items'])
+# ['orange', 'banana']
+
+# 11.
+people_weight_dict = {'john':134, 'mike':170, 'robert':165, 'items':['orange','banana']}
+# How do we get this  ? For example  :  banana
+
+# ans :
+print(people_weight_dict['items'][1])
+# banana
+
+# 12.
+people_weight_dict = {'john':134, 'mike':170,
+                      'robert':165, 'items':['orange', {'k1':"some value"}]}
+# How do we get this  ? For example  :  some value
+
+# ans :
+print(people_weight_dict['items'][1]['k1'])
+# some value
+
+# 13.
+people_weight_dict = {'john':134, 'mike':170,
+                      'robert':165, 'items':['orange', {'k1':"some value"}],
+                      'tuple':(1,2,3,4,5)
+                      }
+# How do we get this  ? For example  : (1,2,3,4,5)
+
+# ans :
+people_weight_dict['tuple']
+print(people_weight_dict['tuple'])
+# (1, 2, 3, 4, 5)
+
+# 14.
+people_weight_dict = {'john':134, 'mike':170,
+                      'robert':165, 'items':['orange', {'k1':"some value"}],
+                      'tuple':(1,2,3,4,5)
+                      }
+# How do we get 3 from the tuple  (1,2,3,4,5)
+
+# ans :
+people_weight_dict['tuple'][2]
+print(people_weight_dict['tuple'][2])
+# 3
+
+# 15.
+people_weight_dict = {'john':134, 'mike':170,
+                      'robert':165, 'items':['orange', {'k1':"some value"}],
+                      'tuple':(1,2,3,4,5)
+                      }
+# How do we remove the tuple  (1,2,3,4,5)
+
+# ans :
+people_weight_dict.pop('tuple')
+print(people_weight_dict)
+# {'john': 134, 'mike': 170, 'robert': 165, 'items': ['orange', {'k1': 'some value'}]}

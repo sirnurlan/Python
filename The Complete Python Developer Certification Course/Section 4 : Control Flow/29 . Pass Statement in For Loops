@@ -1,0 +1,41 @@
+# 1 .
+myList = ['computer','car','bottle','tv']
+for item in myList:
+    # comment to coder: work on this week
+    pass
+# do other studd
+type(str)
+# answer : Process finished with exit code 0
+
+# 2.
+myList = ['computer','car','bottle','tv']
+for item in ['computer','car','bottle','tv']:
+    print(item)
+# answer :
+# computer
+# car
+# bottle
+# tv
+
+# 3.
+myList = ['computer','car','bottle','tv']
+for item in 'this is a string':
+    print(item)
+# answer :         
+# t
+# h
+# i
+# s
+#
+# i
+# s
+#
+# a
+#
+# s
+# t
+# r
+# i
+# n
+# g
+

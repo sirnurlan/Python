@@ -1,0 +1,36 @@
+# 1 .
+# input('Enter your name')
+# answer:
+# Enter your name  nurlan
+# Process finished with exit code 0
+
+# 2.
+# name = input('Enter your name')
+# print("Hello there " + name)
+# answer:
+# Enter your name  ashimov
+# Hello there   ashimov
+# Process finished with exit code 0
+
+# 3.
+# name = input('Enter your name: ')
+# print("Hello there " + name.strip())
+# answer:
+# Enter your name: muratbekovich
+# Hello there muratbekovich
+# Process finished with exit code 0
+
+# 4.
+number = input('Enter your number: ')
+print(str (5) + number )
+# answer:
+# Enter your number: 10
+# 510
+# Process finished with exit code 0
+
+#5.
+number = input('Enter your number: ')
+print( 5 + int(number) )
+# answer:
+# Enter your number: 10
+# 15

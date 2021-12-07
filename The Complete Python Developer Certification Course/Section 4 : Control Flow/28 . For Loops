@@ -1,0 +1,150 @@
+# iterate = perform or utter repeatedly.
+# 1.
+farm_animals = ['goat','horse','chicken','cow','dog']
+for animal in farm_animals:
+    print(animal)
+# ANSWER :
+# goat
+# horse
+# chicken
+# cow
+# dog
+
+# 2.
+farm_animals = ['goat','horse','chicken','cow','dog']
+for animal in farm_animals:
+    sentence = animal + " is safe in our farm!"
+    print(sentence)
+# ANSWER :
+# goat is safe in our farm!
+# horse is safe in our farm!
+# chicken is safe in our farm!
+# cow is safe in our farm!
+# dog is safe in our farm!
+
+# 3.
+farm_animals = ['goat','horse','chicken','cow','dog']
+for animal in farm_animals:
+    sentence = animal + " is safe in our farm!"
+    print("sentence")
+# ANSWER :
+# sentence
+# sentence
+# sentence
+# sentence
+# sentence
+
+# 4.
+farm_animals = ('goat','horse','chicken','cow','dog')
+for animal in farm_animals:
+    sentence = animal + " is safe in our farm!"
+    print(sentence)
+# ANSWER :
+# goat is safe in our farm!
+# horse is safe in our farm!
+# chicken is safe in our farm!
+# cow is safe in our farm!
+# dog is safe in our farm!
+
+# 5.
+farm_animals = ('goat','horse','chicken','cow','dog')
+counter = 0
+for animal in farm_animals:
+    counter = counter + 1
+    sentence = str(counter) + " " + animal + " is safe in our farm!"
+    print(sentence)
+# ANSWER :
+# 1 goat is safe in our farm!
+# 2 horse is safe in our farm!
+# 3 chicken is safe in our farm!
+# 4 cow is safe in our farm!
+# 5 dog is safe in our farm!
+
+# 6.
+greeting = "hi nurlan "
+counter = 0
+for char in greeting:
+    print(char)
+# ANSWER :
+# h
+# i
+#
+# n
+# u
+# r
+# l
+# a
+# n
+
+# 7.
+greeting = "hi my name is nurlan"
+counter = 0
+for char in greeting:
+    if char == "n":
+        break
+    print(char)
+# ANSWER :
+# h
+# i
+#
+# m
+# y
+
+# 8.
+greeting = "hi my name is nurlan"
+counter = 0
+for char in greeting:
+    if char == "n":
+        break
+    print(char)
+print("loop is terminated by this point")
+# ANSWER :
+# loop is terminated by this point
+
+# 9.
+greeting = "hi my name is nurlan"
+counter = 0
+for char in greeting:
+    if char == "n":
+        continue
+    print(char)
+# ANSWER :
+# h
+# i
+#
+# m
+# y
+#
+# a
+# m
+# e
+#
+# i
+# s
+#
+# u
+# r
+# l
+# a
+
+# 10.
+farm_animals = ('goat','horse','chicken','cow','dog')
+for animal in farm_animals:
+    if animal == "chicken":
+        break
+    print(animal)
+# ANSWER :
+# goat
+# horse
+
+# 11.
+farm_animals = ('goat','horse','chicken','cow','dog')
+for animal in farm_animals:
+    if animal == "chicken":
+        continue
+    print(animal)
+# ANSWER :
+# goat
+# horse
+# cow
+# dog

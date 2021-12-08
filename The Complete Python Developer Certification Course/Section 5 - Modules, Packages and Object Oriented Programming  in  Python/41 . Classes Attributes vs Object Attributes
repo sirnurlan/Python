@@ -1,0 +1,140 @@
+# 1.
+class Vehicle:
+    color = 'red' # this should not be changed.
+    def __init__(self,body_type,make):
+        self.vehicle_body = body_type
+        self.vehicle_make = make
+# each car object is an instance of the Vehicle class
+car1 = Vehicle('jeep','ford')
+car2 = Vehicle('truck','mercedes')
+car3 = Vehicle('sedan','toyota')
+car4 = Vehicle('sport','mercedes')
+car5 = Vehicle('motorcycle','mercedes')
+car6 = Vehicle('sedan','honda')
+print(car1.color)
+print(car3.color)
+print(car6.color)
+# answer :
+# red
+# red
+# red
+
+# 2.
+class Vehicle:
+    def __init__(self,body_type,make):
+        self.vehicle_body = body_type
+        self.vehicle_make = make
+Vehicle.color = 'green'
+# each car object is an instance of the Vehicle class
+car1 = Vehicle('jeep','ford')
+car2 = Vehicle('truck','mercedes')
+car3 = Vehicle('sedan','toyota')
+car4 = Vehicle('sport','mercedes')
+car5 = Vehicle('motorcycle','mercedes')
+car6 = Vehicle('sedan','honda')
+print(car1.color)
+print(car3.color)
+print(car6.color)
+# answer :
+# green
+# green
+# green
+
+# 3.
+class Vehicle:
+    def __init__(self,body_type,make):
+        self.vehicle_body = body_type
+        self.vehicle_make = make
+Vehicle.color = 'green'
+# each car object is an instance of the Vehicle class
+car1 = Vehicle('jeep','ford')
+car1.color = 'purple'
+car2 = Vehicle('truck','mercedes')
+car3 = Vehicle('sedan','toyota')
+car4 = Vehicle('sport','mercedes')
+car5 = Vehicle('motorcycle','mercedes')
+car6 = Vehicle('sedan','honda')
+print(car1.color)
+print(car3.color)
+print(car6.color)
+# answer :
+# purple
+# green
+# green
+
+# 4.
+class Vehicle:
+    # this variable should not be changed outside of the class specification.
+    # this is a class attribute
+    vehicle_counter = 0
+    def __init__(self,body_type,make):
+        self.vehicle_body = body_type
+        self.vehicle_make = make
+        Vehicle.vehicle_counter += 1
+    def get_vehicle_count(self):
+        return self.vehicle_counter
+# refrain from doing the below
+# Should not be changing the class specification outside of the class code
+Vehicle.color = 'green'   # potential bad smell in code
+# each car object is an instance of the Vehicle class
+car1 = Vehicle('jeep','toyota')
+# the following 2 lines of the code are not following a class specification
+# leads to poor design in the long-run!
+car1.color = 'purple'
+car1.engine = 'v6'
+car2 = Vehicle('truck','mercedes')
+car3 = Vehicle('sedan','toyota')
+car4 = Vehicle('sport','mercedes')
+car5 = Vehicle('motorcycle','mercedes')
+car6 = Vehicle('sedan','honda')
+
+print(car1.get_vehicle_count())
+print(car2.get_vehicle_count())
+print(car3.get_vehicle_count())
+# the following 2 lines will not run because the engine is not part of the class
+# specification.car1 object abused the class specification...
+print(car3.engine)
+print(car6.engine)
+# answer :
+# 6
+# 6
+# 6
+
+# 5.
+class Vehicle:
+    # this variable should not be changed outside of the class specification.
+    # this is a class attribute
+    vehicle_counter = 0
+    def __init__(self,body_type,make):
+        self.vehicle_body = body_type
+        self.vehicle_make = make
+        Vehicle.vehicle_counter += 1
+    def get_vehicle_count(self):
+        return Vehicle.vehicle_counter
+
+# refrain from doing the below
+# Should not be changing the class specification outside of the class code
+Vehicle.color = 'green'   # potential bad smell in code
+# each car object is an instance of the Vehicle class
+car1 = Vehicle('jeep','toyota')
+# the following 2 lines of the code are not following a class specification
+# leads to poor design in the long-run!
+car1.color = 'purple'
+car1.engine = 'v6'
+car2 = Vehicle('truck','mercedes')
+car3 = Vehicle('sedan','toyota')
+car4 = Vehicle('sport','mercedes')
+car5 = Vehicle('motorcycle','mercedes')
+car6 = Vehicle('sedan','honda')
+
+print(car1.get_vehicle_count())
+print(car2.get_vehicle_count())
+print(car3.get_vehicle_count())
+# the following 2 lines will not run because the engine is not part of the class
+# specification.car1 object abused the class specification...
+print(car3.engine)
+print(car6.engine)
+# answer :
+# 6
+# 6
+# 6

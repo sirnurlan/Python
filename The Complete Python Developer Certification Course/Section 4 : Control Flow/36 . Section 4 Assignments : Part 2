@@ -1,0 +1,93 @@
+# Assignment 4
+
+"""
+Given a non-empty string like "Code" return a string like "CCoCodCode".
+
+grow_string('Code') → 'CCoCodCode'
+grow_string('abc') → 'aababc'
+grow_string('ab') → 'aab'
+
+"""
+
+# Your Code Below:
+def grow_string(str):
+    result = ""
+    for i in range(len(str)):
+        result = result + str[: i + 1]
+    return result
+print(grow_string("Nur"))
+print(grow_string('Code'))
+print(grow_string('abc'))
+print(grow_string('ab'))
+# answer :
+# NNuNur
+# CCoCodCode
+# aababc
+# aab
+
+
+# Assignment 5
+
+"""
+Define a method that accepts a list as an argument
+and returns True if one of the first_folder 4 elements
+in the list is a 6. The list length may be less than 4.
+
+
+first3([1, 2, 6, 3, 4]) → True
+first3([1, 2, 3, 4, 6]) → False
+first3([1, 2, 3, 4, 5]) → False
+
+"""
+
+# Your Code Below:
+def first3(numbers):
+
+    end = len(numbers)
+    if end > 4:
+        end = 4
+    for i in range(end): # loop over index 0,1,2,3
+        if numbers[i] == 6:
+            return True
+    # if we get here, the loop is over and we didn't find a 6
+    return False
+print(first3([1,2,6,3,0,0])) # true
+print(first3([1,2,3,3,0,6])) # false
+print(first3([6])) # true
+print(first3([])) # false
+
+# Assignment 6
+
+"""
+Create a function called last2 that accepts a string argument.
+The function should return the count of the number of times that the last
+2 characters appear in the rest of the string. You should not count
+the last 2 characters as an occurrence. The last 2 characters is just the
+sequence your function should look for in the remaining string.
+
+So "hixxxhi" yields 1 (we won't count the end substring).
+
+
+last2('hixxhi') → 1
+last2('xaxxaxaxx') → 1
+last2('axxxaaxx') → 2
+
+"""
+
+# Your Code Below:
+def last_2(str):
+
+    if len(str) < 2:
+        return 0
+    # last 2 characters can also be extracted with str[-2:]
+    last_2 = str[len(str)-2:]
+    count = 0
+    for i in range(len(str)-2):   #why -2 because we only care about last two characters.
+        sub = str[i : i + 2]
+        if sub == last_2:
+            count = count + 1
+    return count
+# answer :
+print(last_2('hixxhi')) #→ 1
+print(last_2('xaxxaxaxx')) #→ 1
+print(last_2('axxxxaaxx')) #→ 3

@@ -1,0 +1,91 @@
+# Assignment 1
+
+"""
+
+Create a method called twelver that accepts 2 integer arguments: a and b.
+The method should return True if one of the arguments is 12
+or if the sum of both arguments equals 12.
+
+twelver(3, 12) → True
+twelver(4, 9) → False
+twelver(9, 3) → True
+
+"""
+
+# Your Code Below:
+
+def twelver(a,b):
+    return(a==12 or b==12 or a+b==12)
+print(twelver(3,12))
+print(twelver(4,9))
+print(twelver(9,3))
+# answer :
+# True
+# False
+# True
+
+# Assignment 2
+
+"""
+Create a method called pay_extra that accepts 2 parameters:
+ working, and hour. This method will be used to decide whether
+ an employee will receive extra pay or not. If an employee is working
+ during the hrs of 8pm until 8am in the morning, that means they
+ should be paid extra. In that situation the method should return true,
+ otherwise it should return false.
+
+ NOTE: the hour parameter should be from 0-23.
+        So 8AM is hour 8, and 8PM is hour 20.
+
+Example:
+    pay_extra(True, 11) -> false
+    pay_extra(False, 5) -> false
+    pay_extra(True, 6)  -> true
+"""
+
+# Your Code Below:
+def pay_extra(working, hour):
+    if(working and (hour<8 or hour>20)):
+        return True
+    else:
+        return False
+print(pay_extra(True, 11))
+print(pay_extra(False, 5))
+print(pay_extra(True, 6))
+print(pay_extra(True, 5))
+# answer :
+# False
+# False
+# True
+# True
+
+# Assignment 3
+
+"""
+Given a list of ints, return True if the sequence of numbers 1, 2, 3
+appears in the list anywhere, false otherwise.
+
+sequence([1, 1, 2, 3, 1]) → True
+sequence([1, 1, 2, 4, 1]) → False
+sequence([1, 1, 2, 1, 2, 3]) → True
+sequence([1, 2]) → False
+sequence([]) → False
+"""
+
+# Your Code Below:
+def sequence(num_list):
+    for i in range(len(num_list)-2):
+        if num_list[i] == 1 and num_list[i+1] == 2 and num_list[i+2] == 3:
+            return True
+    return False
+print(sequence([1, 1, 2, 3, 1]))
+print(sequence([1, 1, 2, 4, 1]))
+print(sequence([1, 1, 2, 1, 2, 3]))
+print(sequence([1, 2]))
+print(sequence([]))
+# answer :
+# True
+# False
+# True
+# False
+# False

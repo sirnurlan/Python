@@ -1,0 +1,54 @@
+# 1 .
+class Vehicle:
+    def __init__(self,body_type,make):
+        self.vehicle_body = body_type
+        self.vehicle_make = make
+car1 = Vehicle('jeep','toyota')
+print(car1.vehicle_body)
+# answer : jeep
+
+# 2.
+class Vehicle:
+    def __init__(self,body_type,make):
+        self.vehicle_body = body_type
+        self.vehicle_make = make
+car1 = Vehicle('jeep','toyota')
+print(car1.vehicle_make)
+# answer : toyota
+
+# 3.
+class Vehicle:
+    def __init__(self,body_type,make):
+        self.vehicle_body = body_type
+        self.vehicle_make = make
+car1 = Vehicle('jeep','ford')
+car2 = Vehicle('truck','mercedes')
+print(car1.vehicle_make)
+print(car2.vehicle_make)
+# answer :
+# ford
+# mercedes
+
+# 4.
+class Vehicle:
+    def __init__(self,body_type,make):
+        self.vehicle_body = body_type
+        self.vehicle_make = make
+car1 = Vehicle('jeep','ford')
+car2 = Vehicle('truck','mercedes')
+print(type(car2))
+# answer :
+# <class '__main__.Vehicle'>
+
+
+# 5.
+class Vehicle:
+    def __init__(self,body_type,make):
+        self.vehicle_body = body_type
+        self.vehicle_make = make
+car1 = Vehicle('jeep','ford')
+car2 = Vehicle('truck','mercedes')
+print(type(car2))
+# answer :
+# <class '__main__.Vehicle'>
+# will continue  in the next lesson

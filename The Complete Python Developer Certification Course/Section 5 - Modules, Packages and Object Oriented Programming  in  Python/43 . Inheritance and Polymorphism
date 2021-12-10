@@ -1,0 +1,42 @@
+# application.py
+from machines.vehicle_stuff import Vehicle,Truck,Motorcycle
+
+truck1 = Truck("Big Rig","Mercedes")
+car1 = Vehicle("Sedan","Chevy")
+moto1 = Motorcycle("sports","Honda")
+
+for v in [truck1, car1, moto1]:
+    v.drive();
+
+def perform_tasks(vehicle_object):
+    vehicle_object.drive()
+
+# vehicle_stuff.py
+
+class Vehicle:
+    # this variable should not be changed outside of the class specification.
+    # this is a class attribute
+    vehicle_counter = 0
+
+
+    def __init__(self, body_type, make):
+        self.vehicle_body = body_type
+        self.vehicle_make = make
+        Vehicle.vehicle_counter += 1
+
+    def get_vehicle_count(self):
+        return Vehicle.vehicle_counter
+
+    def drive(self):
+        print("vehicle driving...")
+
+class Truck(Vehicle):
+    def drive(self):
+        print("Truck driving...")
+
+class Motorcycle(Vehicle):
+    def drive(self):
+        print("Motorcycle driving very fast...")
+
+
+

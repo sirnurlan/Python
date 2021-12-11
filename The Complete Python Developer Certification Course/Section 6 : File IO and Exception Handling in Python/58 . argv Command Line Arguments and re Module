@@ -1,0 +1,66 @@
+import sys
+# print(sys.argv[0])
+# print(sys.argv[1])
+# print(sys.argv[2])
+
+argument_list = sys.argv[1:]
+for arg in argument_list:
+    print(arg)
+    
+    
+    Microsoft Windows [Version 10.0.18362.356]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+C:\Users\NURLAN>cd PycharmProjects
+
+C:\Users\NURLAN\PycharmProjects>cd app
+
+C:\Users\NURLAN\PycharmProjects\app>dir
+ Volume in drive C has no label.
+ Volume Serial Number is DE2C-C57E
+
+ Directory of C:\Users\NURLAN\PycharmProjects\app
+
+12/11/2021  18:34    <DIR>          .
+12/11/2021  18:34    <DIR>          ..
+12/11/2021  17:14    <DIR>          .idea
+12/11/2021  18:34                16 application.py
+12/11/2021  17:09               544 main.py
+12/11/2021  17:11    <DIR>          venv
+               2 File(s)            560 bytes
+               4 Dir(s)  124,386,164,736 bytes free
+
+C:\Users\NURLAN\PycharmProjects\app>python application.py
+program
+
+C:\Users\NURLAN\PycharmProjects\app>python application.py imtiaz 34
+  File "C:\Users\NURLAN\PycharmProjects\app\application.py", line 3
+    sys.argv[]
+             ^
+SyntaxError: invalid syntax
+
+C:\Users\NURLAN\PycharmProjects\app>python application.py imtiaz 34
+application.py
+
+C:\Users\NURLAN\PycharmProjects\app>python application.py imtiaz 34
+imtiaz
+
+C:\Users\NURLAN\PycharmProjects\app>python application.py imtiaz 34
+34
+
+C:\Users\NURLAN\PycharmProjects\app>python application.py imtiaz 34
+application.py
+imtiaz
+34
+
+C:\Users\NURLAN\PycharmProjects\app>python application.py apple fruit orange computer mouse person car
+application.py
+apple
+fruit
+
+C:\Users\NURLAN\PycharmProjects\app>python application.py apple fruit orange computer mouse person car
+application.py
+apple
+fruit
+
+C:\Users\NURLAN\PycharmProjects\app>

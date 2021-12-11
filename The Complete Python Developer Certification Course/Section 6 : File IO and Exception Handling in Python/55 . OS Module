@@ -1,0 +1,30 @@
+import os
+
+print(os.getcwd())
+
+# Change directory
+os.chdir("C:\\Users\\NURLAN\\Desktop")
+
+# Get current working directory
+print(os.getcwd())
+
+# Lists contents of directory
+print(os.listdir())
+
+if "myfolder" not in os.listdir():
+    os.mkdir("myfolder")
+
+if "myfolder" not in os.listdir():
+    os.makedirs("myfolder\subfolder\datafolder")
+
+# Delete specific file
+# os.remove("myfolder\subfolder\datafolder\myfile.txt")
+
+# Delete specific folder
+# os.rmdir("myfolder\subfolder\datafolder")
+
+# This is dangerous, removes entire directory structure
+# os.removedirs("myfolder\subfolder")
+# os.removedirs("myfolder")
+
+os.rename("sample.txt", 'renamed.txt')

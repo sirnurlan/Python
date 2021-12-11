@@ -1,0 +1,182 @@
+Microsoft Windows [Version 10.0.18362.356]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+C:\Users\NURLAN>pip3 install pandas
+ERROR: Exception:
+Traceback (most recent call last):
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_internal\cli\base_command.py", line 173, in _main
+    status = self.run(options, args)
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_internal\cli\req_command.py", line 203, in wrapper
+    return func(self, options, args)
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_internal\commands\install.py", line 315, in run
+    requirement_set = resolver.resolve(
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_internal\resolution\resolvelib\resolver.py", line 94, in resolve
+    result = self._result = resolver.resolve(
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 472, in resolve
+    state = resolution.resolve(requirements, max_rounds=max_rounds)
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 341, in resolve
+    self._add_to_criteria(self.state.criteria, r, parent=None)
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 172, in _add_to_criteria
+    if not criterion.candidates:
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_vendor\resolvelib\structs.py", line 151, in __bool__
+    return bool(self._sequence)
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_internal\resolution\resolvelib\found_candidates.py", line 140, in __bool__
+    return any(self)
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_internal\resolution\resolvelib\found_candidates.py", line 128, in <genexpr>
+    return (c for c in iterator if id(c) not in self._incompatible_ids)
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_internal\resolution\resolvelib\found_candidates.py", line 29, in _iter_built
+    for version, func in infos:
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_internal\resolution\resolvelib\factory.py", line 272, in iter_index_candidate_infos
+    result = self._finder.find_best_candidate(
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_internal\index\package_finder.py", line 851, in find_best_candidate
+    candidates = self.find_all_candidates(project_name)
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_internal\index\package_finder.py", line 798, in find_all_candidates
+    page_candidates = list(page_candidates_it)
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_internal\index\sources.py", line 134, in page_candidates
+    yield from self._candidates_from_page(self._link)
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_internal\index\package_finder.py", line 758, in process_project_url
+    html_page = self._link_collector.fetch_page(project_url)
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_internal\index\collector.py", line 490, in fetch_page
+    return _get_html_page(location, session=self.session)
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_internal\index\collector.py", line 400, in _get_html_page
+    resp = _get_html_response(url, session=session)
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_internal\index\collector.py", line 115, in _get_html_response
+    resp = session.get(
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_vendor\requests\sessions.py", line 555, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_internal\network\session.py", line 454, in request
+    return super().request(method, url, *args, **kwargs)
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_vendor\requests\sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_vendor\requests\sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_vendor\cachecontrol\adapter.py", line 53, in send
+    resp = super(CacheControlAdapter, self).send(request, **kw)
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_vendor\requests\adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_vendor\urllib3\connectionpool.py", line 696, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_vendor\urllib3\connectionpool.py", line 964, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_vendor\urllib3\connection.py", line 359, in connect
+    conn = self._connect_tls_proxy(hostname, conn)
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_vendor\urllib3\connection.py", line 500, in _connect_tls_proxy
+    return ssl_wrap_socket(
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_vendor\urllib3\util\ssl_.py", line 453, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls)
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_vendor\urllib3\util\ssl_.py", line 495, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock)
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\ssl.py", line 997, in _create
+    raise ValueError("check_hostname requires server_hostname")
+ValueError: check_hostname requires server_hostname
+
+C:\Users\NURLAN>cd pandas
+The system cannot find the path specified.
+
+C:\Users\NURLAN>pip install pandas
+ERROR: Exception:
+Traceback (most recent call last):
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_internal\cli\base_command.py", line 173, in _main
+    status = self.run(options, args)
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_internal\cli\req_command.py", line 203, in wrapper
+    return func(self, options, args)
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_internal\commands\install.py", line 315, in run
+    requirement_set = resolver.resolve(
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_internal\resolution\resolvelib\resolver.py", line 94, in resolve
+    result = self._result = resolver.resolve(
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 472, in resolve
+    state = resolution.resolve(requirements, max_rounds=max_rounds)
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 341, in resolve
+    self._add_to_criteria(self.state.criteria, r, parent=None)
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 172, in _add_to_criteria
+    if not criterion.candidates:
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_vendor\resolvelib\structs.py", line 151, in __bool__
+    return bool(self._sequence)
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_internal\resolution\resolvelib\found_candidates.py", line 140, in __bool__
+    return any(self)
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_internal\resolution\resolvelib\found_candidates.py", line 128, in <genexpr>
+    return (c for c in iterator if id(c) not in self._incompatible_ids)
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_internal\resolution\resolvelib\found_candidates.py", line 29, in _iter_built
+    for version, func in infos:
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_internal\resolution\resolvelib\factory.py", line 272, in iter_index_candidate_infos
+    result = self._finder.find_best_candidate(
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_internal\index\package_finder.py", line 851, in find_best_candidate
+    candidates = self.find_all_candidates(project_name)
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_internal\index\package_finder.py", line 798, in find_all_candidates
+    page_candidates = list(page_candidates_it)
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_internal\index\sources.py", line 134, in page_candidates
+    yield from self._candidates_from_page(self._link)
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_internal\index\package_finder.py", line 758, in process_project_url
+    html_page = self._link_collector.fetch_page(project_url)
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_internal\index\collector.py", line 490, in fetch_page
+    return _get_html_page(location, session=self.session)
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_internal\index\collector.py", line 400, in _get_html_page
+    resp = _get_html_response(url, session=session)
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_internal\index\collector.py", line 115, in _get_html_response
+    resp = session.get(
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_vendor\requests\sessions.py", line 555, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_internal\network\session.py", line 454, in request
+    return super().request(method, url, *args, **kwargs)
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_vendor\requests\sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_vendor\requests\sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_vendor\cachecontrol\adapter.py", line 53, in send
+    resp = super(CacheControlAdapter, self).send(request, **kw)
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_vendor\requests\adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_vendor\urllib3\connectionpool.py", line 696, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_vendor\urllib3\connectionpool.py", line 964, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_vendor\urllib3\connection.py", line 359, in connect
+    conn = self._connect_tls_proxy(hostname, conn)
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_vendor\urllib3\connection.py", line 500, in _connect_tls_proxy
+    return ssl_wrap_socket(
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_vendor\urllib3\util\ssl_.py", line 453, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls)
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\site-packages\pip\_vendor\urllib3\util\ssl_.py", line 495, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock)
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\Users\NURLAN\AppData\Local\Programs\Python\Python39\lib\ssl.py", line 997, in _create
+    raise ValueError("check_hostname requires server_hostname")
+ValueError: check_hostname requires server_hostname
+
+C:\Users\NURLAN>
+
+
+
+C:\Users\NURLAN>cd dekstop
+The system cannot find the path specified.
+
+C:\Users\NURLAN>cd Desktop
+
+C:\Users\NURLAN\Desktop>python program.py
+Traceback (most recent call last):
+  File "C:\Users\NURLAN\Desktop\program.py", line 1, in <module>
+    from main_package import main_module
+  File "C:\Users\NURLAN\Desktop\main_package\main_module.py", line 1, in <module>
+    from another_module import greet_user
+ModuleNotFoundError: No module named 'another_module'
+
+C:\Users\NURLAN\Desktop>python program.py
+hello there stranger from another_file.py
+Traceback (most recent call last):
+  File "C:\Users\NURLAN\Desktop\program.py", line 3, in <module>
+    main_module.main_func()
+AttributeError: module 'main_package.main_module' has no attribute 'main_func'
+
+C:\Users\NURLAN\Desktop>python program.py
+hello there stranger from another_file.py
+Traceback (most recent call last):
+  File "C:\Users\NURLAN\Desktop\program.py", line 3, in <module>
+    main_module.main_func()
+AttributeError: module 'main_package.main_module' has no attribute 'main_func'
+
+C:\Users\NURLAN\Desktop>
+
+

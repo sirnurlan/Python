@@ -1,0 +1,11 @@
+C:\Users\NURLAN>cd Desktop
+
+C:\Users\NURLAN\Desktop>python main_program.py
+hello there stranger from another_file.py
+
+C:\Users\NURLAN\Desktop>python main_module.py
+hello there stranger from another_file.py
+
+C:\Users\NURLAN\Desktop>
+
+

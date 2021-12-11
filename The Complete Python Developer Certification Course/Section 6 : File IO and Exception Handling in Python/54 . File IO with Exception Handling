@@ -1,0 +1,130 @@
+try:
+    with open('C:\\Users\\NURLAN\\Downloads\\sample3.txt',mode='r') as my_file:
+        print(my_file.read())
+except:
+    print("file does not exit: FileNotFoundError")
+
+
+
+print("this line was run...")
+
+try:
+    with open('C:\\Users\\NURLAN\\Downloads\\sample3.txt',mode='r') as my_file:
+        print(my_file.read())
+except TypeError:
+    print("file does not exit: FileNotFoundError")
+
+
+
+print("this line was run...")
+
+try:
+    with open('C:\\Users\\NURLAN\\Downloads\\sample3.txt',mode='r') as my_file:
+        print(my_file.read())
+except FileNotFoundError:
+    print("file does not exit: FileNotFoundError")
+
+
+
+print("this line was run...")
+
+try:
+    with open('C:\\Users\\NURLAN\\Downloads\\sample3.txt',mode='r') as my_file:
+        print(my_file.read())
+        result = 2 + '2'
+except FileNotFoundError:
+    print("file does not exit: FileNotFoundError")
+
+
+
+print("this line was run...")
+
+
+try:
+    with open('C:\\Users\\NURLAN\\Downloads\\sample2.txt',mode='r') as my_file:
+        print(my_file.read())
+        result = 2 + '2'
+except FileNotFoundError:
+    print("file does not exit: FileNotFoundError")
+
+
+
+print("this line was run...")
+
+
+
+try:
+    with open('C:\\Users\\NURLAN\\Downloads\\sample2.txt',mode='r') as my_file:
+        print(my_file.read())
+        result = 2 + '2'
+except FileNotFoundError:
+    print("file does not exit: FileNotFoundError")
+except TypeError:
+    print("there was a type error")
+
+
+print("this line was run...")
+
+try:
+    with open('C:\\Users\\NURLAN\\Downloads\\sample2.txt',mode='r') as my_file:
+        print(my_file.read())
+        result = 2 + '2'
+except FileNotFoundError:
+    print("file does not exit: FileNotFoundError")
+except TypeError:
+    print("there was a type error")
+except:
+    print("Error Occurred Logging to the system")
+finally:
+    print("This will always run regardless of whether we have an exception or not")
+
+
+print("this line was run...")
+
+try:
+    with open('C:\\Users\\NURLAN\\Downloads\\sample2.txt',mode='r') as my_file:
+        print(my_file.read())
+        
+except FileNotFoundError:
+    print("file does not exit: FileNotFoundError")
+except TypeError:
+    print("there was a type error")
+except:
+    print("Error Occurred Logging to the system")
+finally:
+    print("This will always run regardless of whether we have an exception or not")
+
+
+print("this line was run...")
+
+try:
+    my_file = open('C:\\Users\\NURLAN\\Downloads\\sample2.txt',mode='r')
+    try:
+        print(my_file.read())
+
+    except FileNotFoundError:
+          print("file does not exit: FileNotFoundError")
+    except TypeError:
+          print("there was a type error")
+    except:
+          print("Error Occurred Logging to the system")
+    finally:
+          my_file.close()
+          print("This will always run regardless of whether we have an exception or not")
+except:
+    print("Some Error Happened")
+
+print("this line was run...")
+
+my_file = None
+try:
+    my_file = open('C:\\Users\\NURLAN\\Downloads\\sample2.txt',mode='r')
+    print(my_file.read())
+except IOError:
+    print("Issue with working with the file")
+finally:
+    if my_file != None:
+        my_file.close()
+    print("This will always run regardless of whether we have an exception or not")
+
+print("this line was run...")

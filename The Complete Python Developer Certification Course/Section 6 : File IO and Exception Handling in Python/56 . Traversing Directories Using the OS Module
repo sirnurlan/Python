@@ -1,0 +1,53 @@
+import os
+
+for a, b, c in os.walk("C:\\Users\\NURLAN\\Desktop\\myfolder"):
+    print(a)
+    print(b)
+    print(c)
+    print("---------")
+    
+    C:\Users\NURLAN\PycharmProjects\app\venv\Scripts\python.exe C:/Users/NURLAN/PycharmProjects/app/application.py
+C:\Users\NURLAN\Desktop\myfolder
+['stuff']
+['sample2.txt']
+---------
+C:\Users\NURLAN\Desktop\myfolder\stuff
+['data']
+['renamed.txt']
+---------
+C:\Users\NURLAN\Desktop\myfolder\stuff\data
+[]
+['nurlan.jpg']
+---------
+
+Process finished with exit code 0
+
+
+import os
+
+for dirpath, dirnames, filenames in os.walk("C:\\Users\\NURLAN\\Desktop\\myfolder"):
+    print(dirpath)
+    print(dirnames)
+    print(filenames)
+    print("---------")
+
+
+C:\Users\NURLAN\PycharmProjects\app\venv\Scripts\python.exe C:/Users/NURLAN/PycharmProjects/app/application.py
+C:\Users\NURLAN\Desktop\myfolder
+['stuff']
+['sample2.txt']
+---------
+C:\Users\NURLAN\Desktop\myfolder\stuff
+['data', 'other stuff']
+['renamed.txt']
+---------
+C:\Users\NURLAN\Desktop\myfolder\stuff\data
+[]
+['nurlan.jpg']
+---------
+C:\Users\NURLAN\Desktop\myfolder\stuff\other stuff
+[]
+[]
+---------
+
+Process finished with exit code 0

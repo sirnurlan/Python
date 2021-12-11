@@ -1,0 +1,175 @@
+# 1.
+myfile = open(r'C:\Users\NURLAN\Downloads\sample.txt')
+
+content = myfile.read()
+print(content)
+
+myfile.seek(0)
+
+print("--------------------------")
+data = myfile.read()
+
+print(data)
+
+# 2.
+myfile = open(r'C:\Users\NURLAN\Downloads\sample.txt')
+
+content = myfile.read()
+
+myfile.seek(0)
+
+print("--------------------------")
+data = myfile.read()
+myfile.seek(0)
+
+content_list = myfile.readlines()
+myfile.close()
+print(content_list)
+
+# 3.
+
+myfile = open(r'C:\Users\NURLAN\Downloads\sample.txt')
+
+content = myfile.read()
+
+myfile.seek(0)
+
+print("--------------------------")
+data = myfile.read()
+myfile.seek(0)
+
+content_list = myfile.readlines()
+myfile.close()
+print(content_list)
+
+
+
+with open('C:\\Users\\NURLAN\\Downloads\\sample.txt') as my_file:
+    new_content = my_file.read()
+
+print(new_content)
+
+
+myfile = open(r'C:\Users\NURLAN\Downloads\sample.txt')
+
+content = myfile.read()
+
+myfile.seek(0)
+
+print("--------------------------")
+data = myfile.read()
+myfile.seek(0)
+
+content_list = myfile.readlines()
+myfile.close()
+print(content_list)
+
+
+
+with open('C:\\Users\\NURLAN\\Downloads\\sample.txt',mode='a' ) as my_file:
+    my_file.write("THIS IS MY SENTENCE")
+
+my_appended_file = open(r'C:\Users\NURLAN\Downloads\sample.txt')
+
+print(my_appended_file.read())
+
+
+myfile = open(r'C:\Users\NURLAN\Downloads\sample.txt')
+
+content = myfile.read()
+
+myfile.seek(0)
+
+print("--------------------------")
+data = myfile.read()
+myfile.seek(0)
+
+content_list = myfile.readlines()
+myfile.close()
+print(content_list)
+
+
+
+with open('C:\\Users\\NURLAN\\Downloads\\sample.txt',mode='a' ) as my_file:
+    my_file.write("\nTHIS IS MY SENTENCE")
+
+my_appended_file = open(r'C:\Users\NURLAN\Downloads\sample.txt')
+
+print(my_appended_file.read())
+
+
+# myfile = open(r'C:\Users\NURLAN\Downloads\sample.txt')
+#
+# content = myfile.read()
+#
+# myfile.seek(0)
+#
+# print("--------------------------")
+# data = myfile.read()
+# myfile.seek(0)
+#
+# content_list = myfile.readlines()
+# myfile.close()
+# print(content_list)
+
+
+
+with open('C:\\Users\\NURLAN\\Downloads\\sample.txt',mode='w' ) as my_file:
+    my_file.write("\nTHIS IS MY SENTENCE")
+
+my_appended_file = open(r'C:\Users\NURLAN\Downloads\sample.txt')
+
+print(my_appended_file.read())
+
+
+# myfile = open(r'C:\Users\NURLAN\Downloads\sample.txt')
+#
+# content = myfile.read()
+#
+# myfile.seek(0)
+#
+# print("--------------------------")
+# data = myfile.read()
+# myfile.seek(0)
+#
+# content_list = myfile.readlines()
+# myfile.close()
+# print(content_list)
+
+
+
+with open('C:\\Users\\NURLAN\\Downloads\\sample2.txt',mode='w' ) as my_file:
+    my_file.write("\nTHIS IS MY SENTENCE")
+
+# my_appended_file = open(r'C:\Users\NURLAN\Downloads\sample.txt')
+
+# print(my_appended_file.read())
+
+
+with open('C:\\Users\\NURLAN\\Downloads\\sample2.txt',mode='r+' ) as my_file:
+
+# myfile = open(r'C:\Users\NURLAN\Downloads\sample.txt')
+#
+# content = myfile.read()
+#
+# myfile.seek(0)
+#
+# print("--------------------------")
+# data = myfile.read()
+# myfile.seek(0)
+#
+# content_list = myfile.readlines()
+# myfile.close()
+# print(content_list)
+
+
+
+with open('C:\\Users\\NURLAN\\Downloads\\sample2.txt',mode='w+' ) as my_file:
+    my_file.write("YOYO")
+    
+
+# my_appended_file = open(r'C:\Users\NURLAN\Downloads\sample.txt')
+
+# print(my_appended_file.read())
+
+

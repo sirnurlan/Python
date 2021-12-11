@@ -1,0 +1,23 @@
+def sum(num1, num2):
+    try:
+        print(num1+num2)
+    except:
+        print("there was an error! ")
+
+number1 = input("enter a number")
+
+
+sum(number1, 12)
+
+
+def sum(num1, num2):
+    if isinstance(num1, int) and isinstance(num2, int):
+        print(num1+num2)
+    else:
+        print("data type was not a number for the parameters")
+
+
+number1 = input("enter a number")
+
+
+sum(number1, 12)
